@@ -1,28 +1,34 @@
 # -*- coding: utf-8 -*-
-
 class TennisGame5:
     def __init__(self, player1Name, player2Name):
+        # Utiliser snake_case pour les noms de variables en Python.
         self.player1Name = player1Name
         self.player2Name = player2Name
-        self.player1Score = 0
+        self.player1Score = 0   #
         self.player2Score = 0
 
     def won_point(self, playerName):
+        # Pas besoin de parenthèses autour des conditions en Python.
+        # Utiliser des constantes pour les noms des joueurs pour éviter les erreurs de frappe.
         if (playerName == "player1"):
             self.player1Score += 1
         elif (playerName == "player2"):
             self.player2Score += 1
         else:
+            # Inclure le nom du joueur invalide dans le message d'erreur pour un débogage plus facile.
             raise ValueError("Invalid player name.")
 
     def score(self):
+        # Ces variables pourraient être mieux nommées pour indiquer qu'elles sont des scores ajustés.
         p1 = self.player1Score
         p2 = self.player2Score
 
+        # Cette boucle est non-intuitive et pourrait être remplacée par une logique plus explicite.
         while (p1 > 4 or p2 > 4):
             p1 -= 1
             p2 -= 1
 
+        # Créer un attribut de classe pour le dictionnaire serait plus efficace pour ne pas le redéfinir à chaque appel.
         lookup = {
             (0, 0): "Love-All",
             (0, 1): "Love-Fifteen",
@@ -55,4 +61,5 @@ class TennisGame5:
         if (entry in lookup):
             return lookup[entry]
         else:
+            # Inclure les scores invalides dans le message d'erreur pour un débogage plus facile.
             raise ValueError("Invalid score.")

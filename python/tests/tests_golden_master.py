@@ -63,5 +63,52 @@ class TestGoldenMaster(unittest.TestCase):
         self.assertEqual(game.player1Name, "Alice")
         self.assertEqual(game.player2Name, "Bob")
 
+    def test_multilingual(self):
+        languages = ["en", "fr", "es", "pt", "it", "zh", "ja", "ko", "ru", "ar", "de", "hi"]
+        expected_scores = {
+            "Love-All": {
+                "en": "Love-All",
+                "fr": "Zéro-Partout",
+                "es": "Cero-Todo",
+                "pt": "Zero-Tudo",
+                "it": "Zero-Pari",
+                "zh": "零-平",
+                "ja": "ラブオール",
+                "ko": "러브 올",
+                "ru": "Любовь-Все",
+                "ar": "صفر-الكل",
+                "de": "Liebe-Alle",
+                "hi": "प्रेम-ऑल"
+            },
+            "Advantage player1": {
+                "en": "Advantage player1",
+                "fr": "Avantage joueur1",
+                "es": "Ventaja jugador1",
+                "pt": "Vantagem jogador1",
+                "it": "Vantaggio giocatore1",
+                "zh": "优势 选手1",
+                "ja": "アドバンテージ プレイヤー1",
+                "ko": "어드밴티지 플레이어1",
+                "ru": "Преимущество игрок1",
+                "ar": "ميزة اللاعب1",
+                "de": "Vorteil Spieler1",
+                "hi": "फ़ायदा खिलाड़ी1"
+            }
+        }
+
+        for lang in languages:
+            with self.subTest(lang=lang):
+                game = TennisGame6("player1", "player2", language=lang)
+                self.assertEqual(game.score(), expected_scores["Love-All"][lang])
+                game.won_point("player1")
+                game.won_point("player1")
+                game.won_point("player2")
+                game.won_point("player2")
+                game.won_point("player1")
+                game.won_point("player2")
+                game.won_point("player1")
+                self.assertEqual(game.score(), expected_scores["Advantage player1"][lang])
+
+
 if __name__ == "__main__":
     unittest.main()

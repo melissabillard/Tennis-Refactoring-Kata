@@ -21,10 +21,12 @@ class TennisGame6:
             return self._get_regular_score()
 
     def _get_tie_score(self):
-        if self.player1Score < 3:
-            return f"{self._score_to_string(self.player1Score)}-All"
-        else:
-            return "Deuce"
+        tie_scores = {
+            0: "Love-All",
+            1: "Fifteen-All",
+            2: "Thirty-All",
+        }
+        return tie_scores.get(self.player1Score, "Deuce")
 
     def _get_end_game_score(self):
         score_difference = self.player1Score - self.player2Score
@@ -38,4 +40,7 @@ class TennisGame6:
             return f"Win for {self.player2Name}"
 
     def _get_regular_score(self):
-        return f"{self._score_to_string(self.player1Score)}-{self._score_to_string(self.player2Score)}"
+        score_names = ["Love", "Fifteen", "Thirty", "Forty"]
+        score1 = score_names[self.player1Score]
+        score2 = score_names[self.player2Score]
+        return f"{score1}-{score2}"

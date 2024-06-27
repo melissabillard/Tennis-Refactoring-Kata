@@ -1,6 +1,7 @@
 import unittest
 from tennis6 import TennisGame6
 
+
 class TestGoldenMaster(unittest.TestCase):
     def setUp(self):
         self.game = TennisGame6("player1", "player2")
@@ -21,10 +22,24 @@ class TestGoldenMaster(unittest.TestCase):
             {"points": ["player1", "player1", "player2", "player2"], "expected_score": "Thirty-All"},
             {"points": ["player1", "player1", "player2", "player2", "player1"], "expected_score": "Forty-Thirty"},
             {"points": ["player1", "player1", "player2", "player2", "player1", "player2"], "expected_score": "Deuce"},
-            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1"], "expected_score": "Advantage player1"},
-            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1", "player2"], "expected_score": "Deuce"},
-            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1", "player2", "player1"], "expected_score": "Advantage player1"},
-            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1", "player2", "player1", "player1"], "expected_score": "Win for player1"}
+            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1"],
+             "expected_score": "Advantage player1"},
+            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1", "player2"],
+             "expected_score": "Deuce"},
+            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1", "player2",
+                        "player1"], "expected_score": "Advantage player1"},
+            {"points": ["player1", "player1", "player2", "player2", "player1", "player2", "player1", "player2",
+                        "player1", "player1"], "expected_score": "Win for player1"},
+            {"points": ["player2", "player2", "player1", "player1"], "expected_score": "Thirty-All"},
+            {"points": ["player2", "player2", "player2", "player1", "player1", "player1"], "expected_score": "Deuce"},
+            {"points": ["player2", "player2", "player2", "player1", "player1", "player1", "player2"],
+             "expected_score": "Advantage player2"},
+            {"points": ["player2", "player2", "player2", "player1", "player1", "player1", "player2", "player1"],
+             "expected_score": "Deuce"},
+            {"points": ["player2", "player2", "player2", "player1", "player1", "player1", "player2", "player1",
+                        "player2"], "expected_score": "Advantage player2"},
+            {"points": ["player2", "player2", "player2", "player1", "player1", "player1", "player2", "player1",
+                        "player2", "player2"], "expected_score": "Win for player2"}
         ]
 
         for case in test_cases:
@@ -33,6 +48,7 @@ class TestGoldenMaster(unittest.TestCase):
                 for point in case["points"]:
                     self.game.won_point(point)
                 self.assertEqual(self.game.score(), case["expected_score"])
+
 
 if __name__ == "__main__":
     unittest.main()

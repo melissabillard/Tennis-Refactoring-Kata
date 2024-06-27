@@ -1,0 +1,122 @@
+{
+  "en": {
+    "Love": "Love",
+    "Fifteen": "Fifteen",
+    "Thirty": "Thirty",
+    "Forty": "Forty",
+    "All": "All",
+    "Deuce": "Deuce",
+    "Advantage": "Advantage",
+    "Win for": "Win for"
+  },
+  "fr": {
+    "Love": "Zéro",
+    "Fifteen": "Quinze",
+    "Thirty": "Trente",
+    "Forty": "Quarante",
+    "All": "Partout",
+    "Deuce": "Égalité",
+    "Advantage": "Avantage",
+    "Win for": "Victoire pour"
+  },
+  "es": {
+    "Love": "Cero",
+    "Fifteen": "Quince",
+    "Thirty": "Treinta",
+    "Forty": "Cuarenta",
+    "All": "Iguales",
+    "Deuce": "Deuce",
+    "Advantage": "Ventaja",
+    "Win for": "Victoria para"
+  },
+  "pt": {
+    "Love": "Zero",
+    "Fifteen": "Quinze",
+    "Thirty": "Trinta",
+    "Forty": "Quarenta",
+    "All": "Igual",
+    "Deuce": "Deuce",
+    "Advantage": "Vantagem",
+    "Win for": "Vitória para"
+  },
+  "it": {
+    "Love": "Zero",
+    "Fifteen": "Quindici",
+    "Thirty": "Trenta",
+    "Forty": "Quaranta",
+    "All": "Pari",
+    "Deuce": "Deuce",
+    "Advantage": "Vantaggio",
+    "Win for": "Vittoria per"
+  },
+  "zh": {
+    "Love": "零",
+    "Fifteen": "十五",
+    "Thirty": "三十",
+    "Forty": "四十",
+    "All": "平",
+    "Deuce": "平局",
+    "Advantage": "优势",
+    "Win for": "胜利"
+  },
+  "ja": {
+    "Love": "ラブ",
+    "Fifteen": "フィフティーン",
+    "Thirty": "サーティー",
+    "Forty": "フォーティー",
+    "All": "オール",
+    "Deuce": "デュース",
+    "Advantage": "アドバンテージ",
+    "Win for": "勝利"
+  },
+  "ko": {
+    "Love": "러브",
+    "Fifteen": "피프틴",
+    "Thirty": "서티",
+    "Forty": "포티",
+    "All": "올",
+    "Deuce": "듀스",
+    "Advantage": "어드밴티지",
+    "Win for": "승리"
+  },
+  "ru": {
+    "Love": "Ноль",
+    "Fifteen": "Пятнадцать",
+    "Thirty": "Тридцать",
+    "Forty": "Сорок",
+    "All": "Равные",
+    "Deuce": "Дьюс",
+    "Advantage": "Преимущество",
+    "Win for": "Победа для"
+  },
+  "ar": {
+    "Love": "صفر",
+    "Fifteen": "خمسة عشر",
+    "Thirty": "ثلاثون",
+    "Forty": "أربعون",
+    "All": "متساوي",
+    "Deuce": "تعادل",
+    "Advantage": "أفضلية",
+    "Win for": "فوز لـ"
+  },
+  "de": {
+    "Love": "Null",
+    "Fifteen": "Fünfzehn",
+    "Thirty": "Dreißig",
+    "Forty": "Vierzig",
+    "All": "Gleichstand",
+    "Deuce": "Einstand",
+    "Advantage": "Vorteil",
+    "Win for": "Sieg für"
+  },
+  "hi": {
+    "Love": "शून्य",
+    "Fifteen": "पंद्रह",
+    "Thirty": "तीस",
+    "Forty": "चालीस",
+    "All": "बराबर",
+    "Deuce": "ड्यूस",
+    "Advantage": "लाभ",
+    "Win for": "जीत"
+  }
+}

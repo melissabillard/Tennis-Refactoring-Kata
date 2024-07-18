@@ -1,0 +1,259 @@
+[
+    {
+        "points": [],
+        "expected_score": "Love-All",
+        "actual_score": "Love-All"
+    },
+    {
+        "points": [
+            "player1",
+            "player2"
+        ],
+        "expected_score": "Fifteen-All",
+        "actual_score": "Fifteen-All"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Thirty-All",
+        "actual_score": "Thirty-All"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Deuce",
+        "actual_score": "Deuce"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2"
+        ],
+        "expected_score": "Deuce",
+        "actual_score": "Deuce"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player1",
+            "player2"
+        ],
+        "expected_score": "Deuce",
+        "actual_score": "Deuce"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player1"
+        ],
+        "expected_score": "Advantage player1",
+        "actual_score": "Advantage player1"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player1",
+            "player2",
+            "player1"
+        ],
+        "expected_score": "Advantage player1",
+        "actual_score": "Advantage player1"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player1",
+            "player2",
+            "player1",
+            "player1"
+        ],
+        "expected_score": "Win for player1",
+        "actual_score": "Win for player1"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Advantage player2",
+        "actual_score": "Advantage player2"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2"
+        ],
+        "expected_score": "Advantage player2",
+        "actual_score": "Advantage player2"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player2",
+            "player1",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Win for player2",
+        "actual_score": "Win for player2"
+    },
+    {
+        "points": [
+            "player2"
+        ],
+        "expected_score": "Love-Fifteen",
+        "actual_score": "Love-Fifteen"
+    },
+    {
+        "points": [
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Love-Thirty",
+        "actual_score": "Love-Thirty"
+    },
+    {
+        "points": [
+            "player2",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Love-Forty",
+        "actual_score": "Love-Forty"
+    },
+    {
+        "points": [
+            "player1"
+        ],
+        "expected_score": "Fifteen-Love",
+        "actual_score": "Fifteen-Love"
+    },
+    {
+        "points": [
+            "player1",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Fifteen-Thirty",
+        "actual_score": "Fifteen-Thirty"
+    },
+    {
+        "points": [
+            "player1",
+            "player2",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Fifteen-Forty",
+        "actual_score": "Fifteen-Forty"
+    },
+    {
+        "points": [
+            "player1",
+            "player1"
+        ],
+        "expected_score": "Thirty-Love",
+        "actual_score": "Thirty-Love"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2"
+        ],
+        "expected_score": "Thirty-Fifteen",
+        "actual_score": "Thirty-Fifteen"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player2",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Thirty-Forty",
+        "actual_score": "Thirty-Forty"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player1"
+        ],
+        "expected_score": "Forty-Love",
+        "actual_score": "Forty-Love"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player1",
+            "player2"
+        ],
+        "expected_score": "Forty-Fifteen",
+        "actual_score": "Forty-Fifteen"
+    },
+    {
+        "points": [
+            "player1",
+            "player1",
+            "player1",
+            "player2",
+            "player2"
+        ],
+        "expected_score": "Forty-Thirty",
+        "actual_score": "Forty-Thirty"
+    }
+]

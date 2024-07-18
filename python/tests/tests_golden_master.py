@@ -43,11 +43,20 @@ class TestGoldenMaster(unittest.TestCase):
         return test_cases
 
     def test_golden_master_record(self):
+        # Générer les cas de test et enregistrer les résultats attendus dans le fichier golden_master.json
         test_cases = self.generate_test_cases()
+        results = []
+        for case in test_cases:
+            self.game = TennisGame6("player1", "player2")
+            for point in case["points"]:
+                self.game.won_point(point)
+            case["actual_score"] = self.game.score()
+            results.append(case)
         with open('golden_master.json', 'w') as f:
-            json.dump(test_cases, f, indent=4)
+            json.dump(results, f, indent=4)
 
     def test_golden_master_replay(self):
+        # Charger les cas de test du fichier golden_master.json et vérifier les résultats
         with open('golden_master.json', 'r') as f:
             test_cases = json.load(f)
 
@@ -56,14 +65,16 @@ class TestGoldenMaster(unittest.TestCase):
                 self.game = TennisGame6("player1", "player2")
                 for point in case["points"]:
                     self.game.won_point(point)
-                self.assertEqual(self.game.score(), case["expected_score"])
+                self.assertEqual(self.game.score(), case["actual_score"])
 
     def test_player_names(self):
+        # Test pour vérifier les noms des joueurs
         game = TennisGame6("Alice", "Bob")
         self.assertEqual(game.player1Name, "Alice")
         self.assertEqual(game.player2Name, "Bob")
 
     def test_multilingual(self):
+        # Test pour vérifier les traductions des scores en différentes langues
         languages = ["en", "fr", "es", "pt", "it", "zh", "ja", "ko", "ru", "ar", "de", "hi"]
         expected_scores = {
             "Love-All": {

@@ -71,8 +71,8 @@ class TestGoldenMaster(unittest.TestCase):
     def test_player_names(self):
         # Test pour vérifier les noms des joueurs
         game = TennisGame6("Alice", "Bob")
-        self.assertEqual(game.player1Name, "Alice")
-        self.assertEqual(game.player2Name, "Bob")
+        self.assertEqual(game.player1_name, "Alice")
+        self.assertEqual(game.player2_name, "Bob")
 
     def test_multilingual(self):
         # Test pour vérifier les traductions des scores en différentes langues
